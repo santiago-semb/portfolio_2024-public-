@@ -66,6 +66,7 @@
         margin-top: 5px;
         border-radius: 6em;
         /*border-radius: 0.1em;*/
+        border: 4px inset gray;
     }
 
     .data {
@@ -97,6 +98,16 @@
         cursor: pointer;
     }
 
+    
+    @media screen and (max-width: 1289px) {
+        .data p {
+           font-size: 17px;
+        }
+        .left-panel-content {
+            padding-left: 55px;
+        }
+    }
+
     @media screen and (max-width: 1193px) {
         #btn-open-menu {
             margin-right: -3px;
@@ -114,6 +125,9 @@
             width: 35px;
             height: 30px;
         }
+        .left-panel-content {
+            padding-left: 85px;
+        }
     }
 
     @media screen and (max-width: 979px) {
@@ -126,6 +140,11 @@
         .container {
             height: 90vh;
         }
+    }
+
+    .data p {
+        padding-bottom: 5px;
+        border-bottom: 3px dashed #0a0a0a;
     }
 
 </style>
@@ -169,12 +188,11 @@ if(isset($santiago[0])){
         <!-- Contenido -->
         <img src="<?php echo $leftPanelPathPersonalPhoto ?>" alt="foto" id="foto-personal">
         <div class="data">
-            <hr/>
-            <p class="data-big"><?php echo $nombre ?>  <?php echo $apellido ?></p><hr/>
-            <p class="data-big"><?php echo $edad ?> años</p><hr/>
-            <p class="data-big"><?php echo $ciudad ?>, <?php echo $pais ?></p><hr/>
-            <p class="data-small">+<?php echo $telefono ?></p><hr/>
-            <p class="data-small"><?php echo $email ?></p><hr/>
+            <p class="data-big"><?php echo $nombre ?>  <?php echo $apellido ?></p>
+            <p class="data-big"><?php echo $edad ?> años</p>
+            <p class="data-big"><?php echo $ciudad ?>, <?php echo $pais ?></p>
+            <p class="data-small">+<?php echo $telefono ?></p>
+            <p class="data-small"><?php echo $email ?></p>
         </div>
         <div class="cv">
             <a href="<?php echo $curriculum ?>" target="_blank" id="download"><i class="fa-solid fa-download"></i></a>
