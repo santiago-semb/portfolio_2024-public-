@@ -90,8 +90,12 @@
     }
 
     #download {
-        font-size: 24px;
-        color: gainsboro;
+        border: none;
+        padding: 10px;
+        background-color: #0a0a0a;
+        color: white;
+        cursor: pointer;
+        border-radius: 0.2em;
     }
 
     #download:hover {
