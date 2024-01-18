@@ -195,8 +195,8 @@ if(isset($santiago[0])){
             <p class="data-big"><?php echo $nombre ?>  <?php echo $apellido ?></p>
             <p class="data-big"><?php echo $edad ?> años</p>
             <p class="data-big"><?php echo $ciudad ?>, <?php echo $pais ?></p>
-            <p class="data-small">+<?php echo $telefono ?></p>
-            <p class="data-small"><?php echo $email ?></p>
+            <p class="data-small"><img src="#" alt="<?php echo $telefono ?>"></p>
+            <p class="data-small"><img src="#" alt="<?php echo $email ?>"></p>
         </div>
         <div class="cv">
             <a href="<?php echo $curriculum ?>" target="_blank" id="download"><i class="fa-solid fa-download"></i></a>
